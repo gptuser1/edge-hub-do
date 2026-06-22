@@ -78,8 +78,8 @@ export default {
         return jsonRes({ success: false, message: "Missing 'service' query parameter" }, 400);
       }
       const topicStub = env.TOPIC_DURABLE_OBJECT.get(env.TOPIC_DURABLE_OBJECT.idFromName(service));
-      // Forward request with topic name header
-      const forwardReq = new Request(req.url, {
+      // Forward to TopicHub root path with topic name header
+      const forwardReq = new Request("http://internal/", {
         method: req.method,
         headers: {
           ...Object.fromEntries(req.headers),
