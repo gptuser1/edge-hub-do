@@ -1,6 +1,6 @@
-# edge-hub-do
+# edge-broker
 
-基于 Cloudflare Workers + Durable Objects 的实时 Pub/Sub 消息总线。
+基于 Cloudflare Workers + Durable Objects 的轻量级边缘 Pub/Sub 消息代理。
 
 ## 特点
 
@@ -37,7 +37,7 @@ ClientHub (DO) - 每个客户端一个实例，管理 WebSocket 连接
 ## 项目结构
 
 ```
-edge-hub-do/
+edge-broker/
 ├── src/
 │   ├── index.ts                    # 主入口，路由转发
 │   ├── types.ts                    # 类型定义
