@@ -12,4 +12,4 @@ class_name = "ClientHub"
 
 [[migrations]]
 tag = "v1"
-new_classes = ["TopicHub", "ClientHub"]
+new_sqlite_classes = ["TopicHub", "ClientHub"]
